@@ -1,0 +1,397 @@
+/* UNIVERSAIS */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* VARIÁVEIS */
+
+:root{
+  --main-color: #E82C4F;
+  --text-color: rgb(0, 0, 0);
+  --dark-main: #cc2947;
+  --main-background: #ffffff;
+}
+
+/* LOGO */
+
+header{
+  width: 37vw;
+
+  margin-bottom: 3vh;
+  
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+
+  border-bottom: 1px solid var(--dark-main);
+}
+
+#logo{
+  width: 12vw;
+  
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+/* CORPO DA PÁGINA */
+
+body{
+  width: auto;
+  height: auto;
+
+  background-color: var(--main-background);
+
+  display: flex;
+  flex-direction: column;
+                       
+  justify-content: top;
+  align-items: center;
+}
+
+#card-top{
+  height: auto;
+  width: 40vw;
+  
+  display: flex;
+  flex-direction: column;
+  
+  justify-content: center;
+  align-items: center;
+
+  padding: 30px 35px;
+  
+  border-inline: 1px solid var(--dark-main);
+  border-bottom: 3px dashed var(--dark-main); 
+
+  background-color: var(--main-background)
+}
+
+#card-bottom{
+  height: auto;
+  width: 40vw;
+
+  display: flex;
+  flex-direction: column;
+  
+  justify-content: center;
+  align-items: center;
+
+  border-inline: 1px solid var(--dark-main);
+
+  background-color: var(--main-background);
+}
+
+/* CARD TOP */
+
+h1{
+  color: var(--main-color);
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 700;
+  font-size: 1.8rem;
+  text-align: center;
+ 
+  margin-bottom: 10vh;
+}
+
+/* BUTÕES */
+
+#facebook{
+  text-decoration: none;
+
+  margin-bottom: 3vh;
+}
+
+#logo2 {
+  display: none;
+}
+
+#facebook button{
+  width: 25vw;
+  height: 3rem;
+
+  border-radius: 30px;
+  border: none;
+
+  display: flex;
+  flex-direction: row;
+  gap: 2vw;
+
+  font-size: 1rem;
+  color: white;
+  font-weight: 600;
+  font-family: Arial, Helvetica, sans-serif;
+ 
+
+  justify-content: center;
+  align-items: center;
+  
+  background-color: #1977f3;
+}
+
+#facebook button:hover{
+  cursor: pointer;
+  transform: scale(1.04);
+  background-color: #405a93;
+}
+
+#facebook button:active{
+  cursor: pointer;
+  transform: scale(1.04);
+  background-color: #1977f3;
+}
+
+#facebook img{
+  width: 2rem;
+}
+
+#google{
+  text-decoration: none;
+}
+
+#google button{
+  width: 25vw;
+  height: 3rem;
+
+  border-radius: 30px;
+  border: 1px solid black;
+
+  display: flex;
+  flex-direction: row;
+  gap: 2vw;
+
+  font-size: 1rem;
+  color: rgb(100, 100, 100);
+  font-weight: 600;
+  font-family: Arial, Helvetica, sans-serif;
+  
+  justify-content: center;
+  align-items: center;
+
+  margin-bottom: 5vh;
+  
+  background-color: #ffffff;
+}
+
+#google img{
+  width: 1.8rem;
+}
+
+#google button:hover{
+  cursor: pointer;
+  transform: scale(1.04);
+}
+
+#google button:active{
+  cursor: pointer;
+  transform: scale(1.04);
+  background-color: #e9e9e9;
+}
+
+#submit{
+  width: 30vw;
+  height: 3rem;
+
+  font-size: 1rem;
+  color: white;
+  font-weight: 600;
+  font-family: Arial, Helvetica, sans-serif;
+
+  display: flex;
+  flex-direction: row;
+  gap: 2vw;
+
+  justify-content: center;
+  align-items: center;
+
+  margin-top: 5vh;
+  
+  border-radius: 30px;
+  border: none;
+
+  background-color: var(--main-color);
+}
+
+#submit:hover{
+  cursor: pointer;
+  transform: scale(1.04);
+  background-color: var(--dark-main);
+}
+
+#submit:active{
+  cursor: pointer;
+  transform: scale(1.04);
+  background-color: var(--main-color);
+}
+
+#mostrarSenha{
+  width: 2rem;
+  height: 2rem;
+
+  border-bottom: 1px solid var(--main-color);
+  cursor: pointer;
+
+  margin-top: 2vh;
+  margin-right: 1vw;
+}
+
+#mostrarSenha2{
+  width: 2rem;
+  height: 2rem;
+
+  border-bottom: 1px solid var(--main-color);
+  cursor: pointer;
+  display: none;
+
+  margin-top: 2vh;
+  margin-right: 1vw;
+}
+
+/* CAMPOS */
+
+.textfield{
+  display: flex;
+  flex-direction: column;
+
+  align-items: flex-start;
+  justify-content: center;
+
+  margin-block: 1vh;
+}
+
+.textfield a{
+  width: 35vw;
+
+  color: var(--text-color);
+
+  padding: 2vh;
+
+  display: flex;
+  flex-direction: row;
+
+  align-items: left;
+  justify-content: right;
+
+  background: #ffffff56;
+}
+
+.textfield a input{
+  width: 40vw;
+  
+  border: none;
+  border-bottom: 1px solid var(--main-color);
+  
+  padding: 2vh;
+
+  color: var(--text-color);
+  font-size: 1rem;
+  outline: none;
+}
+
+.textfield > label{
+  color: var(--text-color);
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 600;
+  font-size: 1rem;
+
+  margin-top: 5vh;
+  margin-bottom: 0.7rem;
+  margin-left: 1.5vw;
+}
+
+.vetores{
+  width: 2rem;
+  height: 2rem;
+
+  margin-top: 2vh;
+  margin-right: 1vw;
+}
+
+#card-bottom p{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.8rem;
+
+  margin-bottom: 5vh;
+  text-align: center;
+}
+
+/* CAMPOS > VALIDAÇÕES */
+
+
+#labelCamposVazios{
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: left;
+  font-size: 1rem;
+  font-weight: 600;
+ 
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  
+
+  color: #dc2f35;
+
+  margin-top: 8vh;
+}
+
+
+/* TERMOS E POLÍTICAS*/
+
+form p{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.1vw;
+
+  margin-block: 5vh;
+}
+
+form p a{ 
+  color: var(--main-color);
+}
+
+form p a:hover{ 
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* FIM DE PÁGINA*/
+
+body #rodape{
+  height: 15vh;
+  width: 37vw;
+  
+  border-top: 1px solid var(--dark-main);
+
+  display: flex;
+  
+  justify-content: center;
+  align-items: center;
+
+  margin-inline: 1.5vw;
+  margin-top: 3vh;
+}
+
+body p{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1rem;
+
+  margin-bottom: 5vh;
+  text-align: center;
+}
+
+
+body p a{ 
+  color: var(--main-color);
+  text-decoration: none;
+}
+
+body p a:hover{ 
+  color: #97122a;
+  text-decoration: none;
+}
+
+body p a:active{
+  color: var(--main-color);
+  text-decoration: none;
+}
