@@ -185,7 +185,6 @@ function cadastrar() {
 
   if(nome.value.length == 0) {
     campoVazio();
-  
     validNome = false
   } 
   else {
@@ -199,8 +198,8 @@ function cadastrar() {
   }
   
   if(email.value.length == 0) {
+    campoVazio();
     validEmail = false
-    
   }
   else {
     if (email.value.indexOf('@') == -1 || email.value.indexOf('.') == -1 || email.value.indexOf('.') - email.value.indexOf('@') == 1) {
@@ -211,7 +210,7 @@ function cadastrar() {
       validEmail = true
     }
   }
-
+  
   if(cpf.value.length == 0) {
     validCpf = false;
     
