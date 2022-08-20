@@ -18,7 +18,7 @@ const labelEmail = document.getElementById('labelEmail')
 const labelCpf = document.getElementById('labelCpf')
 const labelNascimento = document.getElementById('labelNascimento')
 const labelSenha = document.getElementById('labelSenha')
-const labelCamposVazios = documentgetElementById('labelCamposVazios')
+const labelCamposVazios = document.getElementById('labelCamposVazios')
 
 
 /* FORMATAÇÃO DATA */
