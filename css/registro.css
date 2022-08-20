@@ -206,7 +206,7 @@ h1{
   justify-content: center;
   align-items: center;
 
-  margin-top: 5vh;
+  margin-top: 2vh;
   
   border-radius: 30px;
   border: none;
@@ -331,9 +331,10 @@ h1{
   align-items: center;
   
 
-  color: #e21118;
+  color: #b40006;
 
-  margin-top: 8vh;
+  margin-top: 3vh;
+  display: none;
 }
 
 

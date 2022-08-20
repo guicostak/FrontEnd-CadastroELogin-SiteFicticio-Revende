@@ -21,7 +21,6 @@ const labelSenha = document.getElementById('labelSenha')
 const labelCamposVazios = documentgetElementById('labelCamposVazios')
 
 
-
 /* FORMATAÇÃO DATA */
 
 nascimento.addEventListener('keypress', () => {
@@ -203,7 +202,6 @@ function cadastrar() {
   }
   else {
     if (email.value.indexOf('@') == -1 || email.value.indexOf('.') == -1 || email.value.indexOf('.') - email.value.indexOf('@') == 1) {
-    
       validEmail = false
     } 
     else {
@@ -213,11 +211,9 @@ function cadastrar() {
   
   if(cpf.value.length == 0) {
     validCpf = false;
-    
   }
   else {
     if(cpf.value.length != 14) {
-      
       validCpf = false
     } 
     else {
