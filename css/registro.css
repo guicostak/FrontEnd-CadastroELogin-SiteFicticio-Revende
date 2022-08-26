@@ -329,8 +329,8 @@ h1{
   display: none;
   flex-direction: row;
   align-items: center;
+  justify-content: left;
   
-
   color: #b40006;
 
   margin-top: 1vh;
