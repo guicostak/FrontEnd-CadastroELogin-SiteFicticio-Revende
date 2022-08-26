@@ -33,6 +33,8 @@ nascimento.addEventListener('keypress', () => {
   }
 })
 
+
+
 /* FORMATAÇÃO CPF */
 
 cpf.addEventListener('keypress', () => {
