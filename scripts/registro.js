@@ -33,6 +33,8 @@ nascimento.addEventListener('keypress', () => {
   }
 })
 
+const date = new Date()
+const formater intl.DateTimeFormat()
 
 
 /* FORMATAÇÃO CPF */
